@@ -1,0 +1,13 @@
+#设置当前项目端口
+#8762，8763端口分别充当服务端口1，2
+server:
+  port: 8764
+#配置注册中心并把自己注册进去
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+#当前项目名字
+spring:
+  application:
+    name: service-ribbon
